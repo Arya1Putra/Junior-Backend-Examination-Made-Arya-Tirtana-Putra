@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="pizza">
+        <h3>PIZZA</h3>
+        <div class="flex-card">
+            <div class="card">
+                <img src="image/1.jpg" alt="Avatar" style="width:100px">
+                <div class="container">
+                  <h4><b>Pizza 1</b></h4>
+                  <input type="radio" id="pz1" name="pz1" value="8" onclick="onChoosePizza()">
+                </div>
+            </div>
+            <div class="card">
+                <img src="image/2.jpg" alt="Avatar" style="width:100px">
+                <div class="container">
+                  <h4><b>Pizza 2</b></h4>
+                  <input type="radio" id="pz1" name="pz1" value = "10" onclick="onChoosePizza()" >
+                </div>
+            </div> 
+            <div class="card">
+                <img src="image/3.jpg" alt="Avatar" style="width:100px">
+                <div class="container">
+                  <h4><b>Pizza 3</b></h4>
+                  <input type="radio" id="pz1" name="pz1" value="12" onclick="onChoosePizza()">
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div id="sizes">
+        <h3>Size</h3>
+        <div class="flex-card">
+            <div class="container">
+                <input type="radio" id="pz2" name="pz2" value="-1" onclick="onChooseSize()">
+                <h4><b>Small</b></h4>
+            </div>
+            <div class="container">
+                <input type="radio" id="pz2" name="pz2" value="0" checked onclick="onChooseSize()">
+                <h4><b>Medium</b></h4>
+            </div>
+            <div class="container">
+                <input type="radio" id="pz2" name="pz2" value="2" onclick="onChooseSize()">
+                <h4><b>Large</b></h4>
+            </div>
+        </div>
+    </div>
+    <div id="toppings">
+        <h3>Toppings</h3>
+        <div class="flex-card">
+            <div class="container" style="text-align: left;">
+                <input type="checkbox" id="avocado" value="1" onclick="onChooseTopping()"> Avocado<br>
+                <input type="checkbox" id="broccoli" value="1" onclick="onChooseTopping()"> Broccoli<br>
+                <input type="checkbox" id="onions" value="1" onclick="onChooseTopping()"> Onions<br>
+                <input type="checkbox" id="zucchini" value="1" onclick="onChooseTopping()"> Zucchini<br>
+            </div>
+            <div class="container" style="text-align: left;">
+                <input type="checkbox" id="lobster" value="2" onclick="onChooseTopping()"> Lobster<br>
+                <input type="checkbox" id="oyster" value="2" onclick="onChooseTopping()"> Oyster<br>
+                <input type="checkbox" id="salmon" value="2" onclick="onChooseTopping()"> Salmon<br>
+                <input type="checkbox" id="tuna" value="2" onclick="onChooseTopping()"> Tuna<br>
+            </div>
+            <div class="container" style="text-align: left;">
+                <input type="checkbox" id="bacon" value="3" onclick="onChooseTopping()"> Bacon<br>
+                <input type="checkbox" id="duck" value="3" onclick="onChooseTopping()"> Duck<br>
+                <input type="checkbox" id="ham" value="3" onclick="onChooseTopping()"> Ham<br>
+                <input type="checkbox" id="sausage" value="3" onclick="onChooseTopping()"> Sausage<br>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>Price</h3>
+        <h2 id="price">$0</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
